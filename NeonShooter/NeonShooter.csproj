@@ -1,0 +1,283 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Project DefaultTargets="Build" ToolsVersion="4.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <Import Project="$(MSBuildExtensionsPath)\MonoGame\v3.0\MonoGame.Common.props" Condition="Exists('$(MSBuildExtensionsPath)\MonoGame\v3.0\MonoGame.Common.props')" />
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">iPhoneSimulator</Platform>
+    <ProjectGuid>{5F8EDAA6-5D30-4CDE-BB7F-6CDDBF4E23E6}</ProjectGuid>
+    <ProjectTypeGuids>{FEACFBD2-3405-455C-9665-78FE426C6842};{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}</ProjectTypeGuids>
+    <OutputType>Exe</OutputType>
+    <RootNamespace>NeonShooter</RootNamespace>
+    <AssemblyName>NeonShooter</AssemblyName>
+    <IPhoneResourcePrefix>Resources</IPhoneResourcePrefix>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|iPhoneSimulator' ">
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\iPhoneSimulator\Debug</OutputPath>
+    <DefineConstants>DEBUG;ENABLE_TEST_CLOUD;</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+    <CodesignKey>iPhone Developer</CodesignKey>
+    <MtouchDebug>true</MtouchDebug>
+    <MtouchNoSymbolStrip>true</MtouchNoSymbolStrip>
+    <MtouchFastDev>true</MtouchFastDev>
+    <IOSDebuggerPort>64002</IOSDebuggerPort>
+    <MtouchLink>None</MtouchLink>
+    <MtouchArch>x86_64</MtouchArch>
+    <MtouchHttpClientHandler>NSUrlSessionHandler</MtouchHttpClientHandler>
+    <DeviceSpecificBuild>false</DeviceSpecificBuild>
+    <MtouchVerbosity></MtouchVerbosity>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|iPhone' ">
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\iPhone\Release</OutputPath>
+    <DefineConstants></DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+    <CodesignKey>iPhone Developer</CodesignKey>
+    <MtouchUseLlvm>true</MtouchUseLlvm>
+    <MtouchFloat32>true</MtouchFloat32>
+    <CodesignEntitlements>Entitlements.plist</CodesignEntitlements>
+    <MtouchLink>SdkOnly</MtouchLink>
+    <MtouchArch>ARM64</MtouchArch>
+    <MtouchHttpClientHandler>NSUrlSessionHandler</MtouchHttpClientHandler>
+    <MtouchVerbosity></MtouchVerbosity>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|iPhoneSimulator' ">
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\iPhoneSimulator\Release</OutputPath>
+    <DefineConstants></DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+    <CodesignKey>iPhone Developer</CodesignKey>
+    <MtouchNoSymbolStrip>true</MtouchNoSymbolStrip>
+    <MtouchLink>None</MtouchLink>
+    <MtouchArch>x86_64</MtouchArch>
+    <MtouchHttpClientHandler>NSUrlSessionHandler</MtouchHttpClientHandler>
+    <MtouchVerbosity></MtouchVerbosity>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|iPhone' ">
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\iPhone\Debug</OutputPath>
+    <DefineConstants>DEBUG;ENABLE_TEST_CLOUD;</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+    <CodesignKey>iPhone Developer</CodesignKey>
+    <DeviceSpecificBuild>true</DeviceSpecificBuild>
+    <MtouchDebug>true</MtouchDebug>
+    <MtouchNoSymbolStrip>true</MtouchNoSymbolStrip>
+    <MtouchFastDev>true</MtouchFastDev>
+    <MtouchFloat32>true</MtouchFloat32>
+    <CodesignEntitlements>Entitlements.plist</CodesignEntitlements>
+    <IOSDebuggerPort>63260</IOSDebuggerPort>
+    <MtouchLink>SdkOnly</MtouchLink>
+    <MtouchArch>ARM64</MtouchArch>
+    <MtouchHttpClientHandler>NSUrlSessionHandler</MtouchHttpClientHandler>
+    <MtouchVerbosity></MtouchVerbosity>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="System" />
+    <Reference Include="System.Xml" />
+    <Reference Include="System.Core" />
+    <Reference Include="Xamarin.iOS" />
+    <Reference Include="Newtonsoft.Json">
+      <HintPath>..\..\Libraries\Extended\Newtonsoft.Json.dll</HintPath>
+    </Reference>
+    <Reference Include="MonoGame.Extended.Tweening">
+      <HintPath>..\..\Libraries\Extended\MonoGame.Extended.Tweening.dll</HintPath>
+    </Reference>
+    <Reference Include="MonoGame.Extended.SceneGraphs">
+      <HintPath>..\..\Libraries\Extended\MonoGame.Extended.SceneGraphs.dll</HintPath>
+    </Reference>
+    <Reference Include="MonoGame.Extended.Tiled">
+      <HintPath>..\..\Libraries\Extended\MonoGame.Extended.Tiled.dll</HintPath>
+    </Reference>
+    <Reference Include="MonoGame.Extended.Particles">
+      <HintPath>..\..\Libraries\Extended\MonoGame.Extended.Particles.dll</HintPath>
+    </Reference>
+    <Reference Include="MonoGame.Extended.Input">
+      <HintPath>..\..\Libraries\Extended\MonoGame.Extended.Input.dll</HintPath>
+    </Reference>
+    <Reference Include="MonoGame.Extended.NuclexGui">
+      <HintPath>..\..\Libraries\Extended\MonoGame.Extended.NuclexGui.dll</HintPath>
+    </Reference>
+    <Reference Include="MonoGame.Extended.Gui">
+      <HintPath>..\..\Libraries\Extended\MonoGame.Extended.Gui.dll</HintPath>
+    </Reference>
+    <Reference Include="MonoGame.Extended.Graphics">
+      <HintPath>..\..\Libraries\Extended\MonoGame.Extended.Graphics.dll</HintPath>
+    </Reference>
+    <Reference Include="MonoGame.Extended">
+      <HintPath>..\..\Libraries\Extended\MonoGame.Extended.dll</HintPath>
+    </Reference>
+    <Reference Include="MonoGame.Extended.Entities">
+      <HintPath>..\..\Libraries\Extended\MonoGame.Extended.Entities.dll</HintPath>
+    </Reference>
+    <Reference Include="MonoGame.Extended.Content.Pipeline">
+      <HintPath>..\..\Libraries\Extended\MonoGame.Extended.Content.Pipeline.dll</HintPath>
+    </Reference>
+    <Reference Include="MonoGame.Extended.Collisions">
+      <HintPath>..\..\Libraries\Extended\MonoGame.Extended.Collisions.dll</HintPath>
+    </Reference>
+    <Reference Include="MonoGame.Extended.Animations">
+      <HintPath>..\..\Libraries\Extended\MonoGame.Extended.Animations.dll</HintPath>
+    </Reference>
+    <Reference Include="MonoGame.Framework">
+      <HintPath>..\packages\MonoGame.Framework.iOS.3.7.0.1708\lib\XamariniOS\MonoGame.Framework.dll</HintPath>
+    </Reference>
+  </ItemGroup>
+  <ItemGroup>
+    <ImageAsset Include="Assets.xcassets\AppIcon.appiconset\Contents.json" />
+    <ImageAsset Include="Assets.xcassets\Contents.json" />
+  </ItemGroup>
+  <ItemGroup>
+    <Folder Include="Resources\" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Info.plist" />
+    <None Include="Entitlements.plist" />
+    <None Include="Game\Gamecodegoeshere.txt" />
+    <None Include="packages.config" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="Game\Art.cs" />
+    <Compile Include="Game\BlackHole.cs" />
+    <Compile Include="Game\BloomComponent.cs" />
+    <Compile Include="Game\BloomSettings.cs" />
+    <Compile Include="Game\Bullet.cs" />
+    <Compile Include="Game\ColorUtil.cs" />
+    <Compile Include="Game\Enemy.cs" />
+    <Compile Include="Game\EnemySpawner.cs" />
+    <Compile Include="Game\Entity.cs" />
+    <Compile Include="Game\EntityManager.cs" />
+    <Compile Include="Game\Extensions.cs" />
+    <Compile Include="Game\GameRoot.cs" />
+    <Compile Include="Game\Grid.cs" />
+    <Compile Include="Game\Input.cs" />
+    <Compile Include="Game\MathUtil.cs" />
+    <Compile Include="Game\ParticleManager.cs" />
+    <Compile Include="Game\ParticleState.cs" />
+    <Compile Include="Game\PlayerShip.cs" />
+    <Compile Include="Game\PlayerStatus.cs" />
+    <Compile Include="Game\Program.cs" />
+    <Compile Include="Game\Sound.cs" />
+    <Compile Include="Game.cs" />
+    <Compile Include="Program.cs" />
+  </ItemGroup>
+  <ItemGroup>
+    <MonoGameContentReference Include="Content\NeonShooter.mgcb" />
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="Content\iOS\Font.xnb">
+      <Link>Content\Font.xnb</Link>
+    </Content>
+    <Content Include="Content\iOS\Art\Black Hole.xnb">
+      <Link>Content\Art\Black Hole.xnb</Link>
+    </Content>
+    <Content Include="Content\iOS\Art\Bullet.xnb">
+      <Link>Content\Art\Bullet.xnb</Link>
+    </Content>
+    <Content Include="Content\iOS\Art\Glow.xnb">
+      <Link>Content\Art\Glow.xnb</Link>
+    </Content>
+    <Content Include="Content\iOS\Art\Laser.xnb">
+      <Link>Content\Art\Laser.xnb</Link>
+    </Content>
+    <Content Include="Content\iOS\Art\Player.xnb">
+      <Link>Content\Art\Player.xnb</Link>
+    </Content>
+    <Content Include="Content\iOS\Art\Pointer.xnb">
+      <Link>Content\Art\Pointer.xnb</Link>
+    </Content>
+    <Content Include="Content\iOS\Art\Seeker.xnb">
+      <Link>Content\Art\Seeker.xnb</Link>
+    </Content>
+    <Content Include="Content\iOS\Art\Wanderer.xnb">
+      <Link>Content\Art\Wanderer.xnb</Link>
+    </Content>
+    <Content Include="Content\iOS\Audio\Music.m4a">
+      <Link>Content\Audio\Music.m4a</Link>
+    </Content>
+    <Content Include="Content\iOS\Audio\Music.xnb">
+      <Link>Content\Audio\Music.xnb</Link>
+    </Content>
+    <Content Include="Content\iOS\Audio\explosion-01.xnb">
+      <Link>Content\Audio\explosion-01.xnb</Link>
+    </Content>
+    <Content Include="Content\iOS\Audio\explosion-02.xnb">
+      <Link>Content\Audio\explosion-02.xnb</Link>
+    </Content>
+    <Content Include="Content\iOS\Audio\explosion-03.xnb">
+      <Link>Content\Audio\explosion-03.xnb</Link>
+    </Content>
+    <Content Include="Content\iOS\Audio\explosion-04.xnb">
+      <Link>Content\Audio\explosion-04.xnb</Link>
+    </Content>
+    <Content Include="Content\iOS\Audio\explosion-05.xnb">
+      <Link>Content\Audio\explosion-05.xnb</Link>
+    </Content>
+    <Content Include="Content\iOS\Audio\explosion-06.xnb">
+      <Link>Content\Audio\explosion-06.xnb</Link>
+    </Content>
+    <Content Include="Content\iOS\Audio\explosion-07.xnb">
+      <Link>Content\Audio\explosion-07.xnb</Link>
+    </Content>
+    <Content Include="Content\iOS\Audio\explosion-08.xnb">
+      <Link>Content\Audio\explosion-08.xnb</Link>
+    </Content>
+    <Content Include="Content\iOS\Audio\shoot-01.xnb">
+      <Link>Content\Audio\shoot-01.xnb</Link>
+    </Content>
+    <Content Include="Content\iOS\Audio\shoot-02.xnb">
+      <Link>Content\Audio\shoot-02.xnb</Link>
+    </Content>
+    <Content Include="Content\iOS\Audio\shoot-03.xnb">
+      <Link>Content\Audio\shoot-03.xnb</Link>
+    </Content>
+    <Content Include="Content\iOS\Audio\shoot-04.xnb">
+      <Link>Content\Audio\shoot-04.xnb</Link>
+    </Content>
+    <Content Include="Content\iOS\Audio\spawn-01.xnb">
+      <Link>Content\Audio\spawn-01.xnb</Link>
+    </Content>
+    <Content Include="Content\iOS\Audio\spawn-02.xnb">
+      <Link>Content\Audio\spawn-02.xnb</Link>
+    </Content>
+    <Content Include="Content\iOS\Audio\spawn-03.xnb">
+      <Link>Content\Audio\spawn-03.xnb</Link>
+    </Content>
+    <Content Include="Content\iOS\Audio\spawn-04.xnb">
+      <Link>Content\Audio\spawn-04.xnb</Link>
+    </Content>
+    <Content Include="Content\iOS\Audio\spawn-05.xnb">
+      <Link>Content\Audio\spawn-05.xnb</Link>
+    </Content>
+    <Content Include="Content\iOS\Audio\spawn-06.xnb">
+      <Link>Content\Audio\spawn-06.xnb</Link>
+    </Content>
+    <Content Include="Content\iOS\Audio\spawn-07.xnb">
+      <Link>Content\Audio\spawn-07.xnb</Link>
+    </Content>
+    <Content Include="Content\iOS\Audio\spawn-08.xnb">
+      <Link>Content\Audio\spawn-08.xnb</Link>
+    </Content>
+    <Content Include="Content\iOS\Shaders\BloomCombine.xnb">
+      <Link>Content\Shaders\BloomCombine.xnb</Link>
+    </Content>
+    <Content Include="Content\iOS\Shaders\BloomExtract.xnb">
+      <Link>Content\Shaders\BloomExtract.xnb</Link>
+    </Content>
+    <Content Include="Content\iOS\Shaders\GaussianBlur.xnb">
+      <Link>Content\Shaders\GaussianBlur.xnb</Link>
+    </Content>
+  </ItemGroup>
+  <Import Project="$(MSBuildExtensionsPath)\MonoGame\v3.0\MonoGame.Content.Builder.targets" />
+  <Import Project="$(MSBuildExtensionsPath)\Xamarin\iOS\Xamarin.iOS.CSharp.targets" />
+  <Import Project="..\packages\MonoGame.Framework.iOS.3.7.0.1708\build\MonoGame.Framework.iOS.targets" Condition="Exists('..\packages\MonoGame.Framework.iOS.3.7.0.1708\build\MonoGame.Framework.iOS.targets')" />
+</Project>
