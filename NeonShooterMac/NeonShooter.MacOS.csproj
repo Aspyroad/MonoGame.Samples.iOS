@@ -1,0 +1,263 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Project DefaultTargets="Build" ToolsVersion="4.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <Import Project="$(MSBuildExtensionsPath)\MonoGame\v3.0\MonoGame.Common.props" Condition="Exists('$(MSBuildExtensionsPath)\MonoGame\v3.0\MonoGame.Common.props')" />
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">x86</Platform>
+    <ProjectGuid>{3A23AA06-840E-4419-9CA5-6CA6A633EB1F}</ProjectGuid>
+    <ProjectTypeGuids>{A3F8F2AB-B479-4A4A-A458-A89E7DC349F1};{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}</ProjectTypeGuids>
+    <OutputType>Exe</OutputType>
+    <RootNamespace>NeonShooterMac</RootNamespace>
+    <AssemblyName>NeonShooterMac</AssemblyName>
+    <TargetFrameworkVersion>v4.5</TargetFrameworkVersion>
+    <MonoMacResourcePrefix>Resources</MonoMacResourcePrefix>
+    <MonoGamePlatform>DesktopGL</MonoGamePlatform>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|x86' ">
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\Debug</OutputPath>
+    <DefineConstants>DEBUG;</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+    <EnableCodeSigning>false</EnableCodeSigning>
+    <CodeSigningKey>Mac Developer</CodeSigningKey>
+    <CreatePackage>false</CreatePackage>
+    <EnablePackageSigning>false</EnablePackageSigning>
+    <IncludeMonoRuntime>false</IncludeMonoRuntime>
+    <UseSGen>true</UseSGen>
+    <UseRefCounting>true</UseRefCounting>
+    <PlatformTarget>x86</PlatformTarget>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|x86' ">
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release</OutputPath>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+    <EnableCodeSigning>false</EnableCodeSigning>
+    <CreatePackage>true</CreatePackage>
+    <EnablePackageSigning>false</EnablePackageSigning>
+    <IncludeMonoRuntime>true</IncludeMonoRuntime>
+    <UseSGen>true</UseSGen>
+    <UseRefCounting>true</UseRefCounting>
+    <LinkMode>SdkOnly</LinkMode>
+    <PlatformTarget>x86</PlatformTarget>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="System" />
+    <Reference Include="System.Xml" />
+    <Reference Include="System.Core" />
+    <Reference Include="System.Xml.Linq" />
+    <Reference Include="System.Drawing" />
+    <Reference Include="Xamarin.Mac" />
+    <Reference Include="MonoGame.Framework">
+      <HintPath>$(MonoGameInstallDirectory)\MonoGame\v3.0\Assemblies\DesktopGL\MonoGame.Framework.dll</HintPath>
+    </Reference>
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="Main.cs" />
+    <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="..\NeonShooter\Game\Art.cs">
+      <Link>Game\Art.cs</Link>
+    </Compile>
+    <Compile Include="..\NeonShooter\Game\BlackHole.cs">
+      <Link>Game\BlackHole.cs</Link>
+    </Compile>
+    <Compile Include="..\NeonShooter\Game\BloomComponent.cs">
+      <Link>Game\BloomComponent.cs</Link>
+    </Compile>
+    <Compile Include="..\NeonShooter\Game\BloomSettings.cs">
+      <Link>Game\BloomSettings.cs</Link>
+    </Compile>
+    <Compile Include="..\NeonShooter\Game\Bullet.cs">
+      <Link>Game\Bullet.cs</Link>
+    </Compile>
+    <Compile Include="..\NeonShooter\Game\ColorUtil.cs">
+      <Link>Game\ColorUtil.cs</Link>
+    </Compile>
+    <Compile Include="..\NeonShooter\Game\Enemy.cs">
+      <Link>Game\Enemy.cs</Link>
+    </Compile>
+    <Compile Include="..\NeonShooter\Game\EnemySpawner.cs">
+      <Link>Game\EnemySpawner.cs</Link>
+    </Compile>
+    <Compile Include="..\NeonShooter\Game\Entity.cs">
+      <Link>Game\Entity.cs</Link>
+    </Compile>
+    <Compile Include="..\NeonShooter\Game\EntityManager.cs">
+      <Link>Game\EntityManager.cs</Link>
+    </Compile>
+    <Compile Include="..\NeonShooter\Game\Extensions.cs">
+      <Link>Game\Extensions.cs</Link>
+    </Compile>
+    <Compile Include="..\NeonShooter\Game\GameRoot.cs">
+      <Link>Game\GameRoot.cs</Link>
+    </Compile>
+    <Compile Include="..\NeonShooter\Game\Grid.cs">
+      <Link>Game\Grid.cs</Link>
+    </Compile>
+    <Compile Include="..\NeonShooter\Game\Input.cs">
+      <Link>Game\Input.cs</Link>
+    </Compile>
+    <Compile Include="..\NeonShooter\Game\MathUtil.cs">
+      <Link>Game\MathUtil.cs</Link>
+    </Compile>
+    <Compile Include="..\NeonShooter\Game\ParticleManager.cs">
+      <Link>Game\ParticleManager.cs</Link>
+    </Compile>
+    <Compile Include="..\NeonShooter\Game\ParticleState.cs">
+      <Link>Game\ParticleState.cs</Link>
+    </Compile>
+    <Compile Include="..\NeonShooter\Game\PlayerShip.cs">
+      <Link>Game\PlayerShip.cs</Link>
+    </Compile>
+    <Compile Include="..\NeonShooter\Game\PlayerStatus.cs">
+      <Link>Game\PlayerStatus.cs</Link>
+    </Compile>
+    <Compile Include="..\NeonShooter\Game\Program.cs">
+      <Link>Game\Program.cs</Link>
+    </Compile>
+    <Compile Include="..\NeonShooter\Game\Sound.cs">
+      <Link>Game\Sound.cs</Link>
+    </Compile>
+    <Compile Include="..\NeonShooter\Game.cs">
+      <Link>Game.cs</Link>
+    </Compile>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Info.plist" />
+    <None Include="..\NeonShooter\Game\Gamecodegoeshere.txt">
+      <Link>Game\Gamecodegoeshere.txt</Link>
+    </None>
+    <None Include="..\NeonShooter\Content\iOS\Font.xnb">
+      <Link>Content\Font.xnb</Link>
+    </None>
+  </ItemGroup>
+  <ItemGroup>
+    <EmbeddedResource Include="Icon.ico" />
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="MonoGame.Framework.dll.config">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="..\NeonShooter\Content\iOS\Art\Black Hole.xnb">
+      <Link>Content\Art\Black Hole.xnb</Link>
+    </Content>
+    <Content Include="..\NeonShooter\Content\iOS\Art\Bullet.xnb">
+      <Link>Content\Art\Bullet.xnb</Link>
+    </Content>
+    <Content Include="..\NeonShooter\Content\iOS\Art\Glow.xnb">
+      <Link>Content\Art\Glow.xnb</Link>
+    </Content>
+    <Content Include="..\NeonShooter\Content\iOS\Art\Laser.xnb">
+      <Link>Content\Art\Laser.xnb</Link>
+    </Content>
+    <Content Include="..\NeonShooter\Content\iOS\Art\Player.xnb">
+      <Link>Content\Art\Player.xnb</Link>
+    </Content>
+    <Content Include="..\NeonShooter\Content\iOS\Art\Pointer.xnb">
+      <Link>Content\Art\Pointer.xnb</Link>
+    </Content>
+    <Content Include="..\NeonShooter\Content\iOS\Art\Seeker.xnb">
+      <Link>Content\Art\Seeker.xnb</Link>
+    </Content>
+    <Content Include="..\NeonShooter\Content\iOS\Art\Wanderer.xnb">
+      <Link>Content\Art\Wanderer.xnb</Link>
+    </Content>
+    <Content Include="..\NeonShooter\Content\iOS\Shaders\BloomCombine.xnb">
+      <Link>Content\Shaders\BloomCombine.xnb</Link>
+    </Content>
+    <Content Include="..\NeonShooter\Content\iOS\Shaders\BloomExtract.xnb">
+      <Link>Content\Shaders\BloomExtract.xnb</Link>
+    </Content>
+    <Content Include="..\NeonShooter\Content\iOS\Shaders\GaussianBlur.xnb">
+      <Link>Content\Shaders\GaussianBlur.xnb</Link>
+    </Content>
+    <Content Include="..\NeonShooter\Content\iOS\Audio\Music.m4a">
+      <Link>Content\Audio\Music.m4a</Link>
+    </Content>
+    <Content Include="..\NeonShooter\Content\iOS\Audio\Music.xnb">
+      <Link>Content\Audio\Music.xnb</Link>
+    </Content>
+    <Content Include="..\NeonShooter\Content\iOS\Audio\explosion-01.xnb">
+      <Link>Content\Audio\explosion-01.xnb</Link>
+    </Content>
+    <Content Include="..\NeonShooter\Content\iOS\Audio\explosion-02.xnb">
+      <Link>Content\Audio\explosion-02.xnb</Link>
+    </Content>
+    <Content Include="..\NeonShooter\Content\iOS\Audio\explosion-03.xnb">
+      <Link>Content\Audio\explosion-03.xnb</Link>
+    </Content>
+    <Content Include="..\NeonShooter\Content\iOS\Audio\explosion-04.xnb">
+      <Link>Content\Audio\explosion-04.xnb</Link>
+    </Content>
+    <Content Include="..\NeonShooter\Content\iOS\Audio\explosion-05.xnb">
+      <Link>Content\Audio\explosion-05.xnb</Link>
+    </Content>
+    <Content Include="..\NeonShooter\Content\iOS\Audio\explosion-06.xnb">
+      <Link>Content\Audio\explosion-06.xnb</Link>
+    </Content>
+    <Content Include="..\NeonShooter\Content\iOS\Audio\explosion-07.xnb">
+      <Link>Content\Audio\explosion-07.xnb</Link>
+    </Content>
+    <Content Include="..\NeonShooter\Content\iOS\Audio\explosion-08.xnb">
+      <Link>Content\Audio\explosion-08.xnb</Link>
+    </Content>
+    <Content Include="..\NeonShooter\Content\iOS\Audio\shoot-01.xnb">
+      <Link>Content\Audio\shoot-01.xnb</Link>
+    </Content>
+    <Content Include="..\NeonShooter\Content\iOS\Audio\shoot-02.xnb">
+      <Link>Content\Audio\shoot-02.xnb</Link>
+    </Content>
+    <Content Include="..\NeonShooter\Content\iOS\Audio\shoot-03.xnb">
+      <Link>Content\Audio\shoot-03.xnb</Link>
+    </Content>
+    <Content Include="..\NeonShooter\Content\iOS\Audio\shoot-04.xnb">
+      <Link>Content\Audio\shoot-04.xnb</Link>
+    </Content>
+    <Content Include="..\NeonShooter\Content\iOS\Audio\spawn-01.xnb">
+      <Link>Content\Audio\spawn-01.xnb</Link>
+    </Content>
+    <Content Include="..\NeonShooter\Content\iOS\Audio\spawn-02.xnb">
+      <Link>Content\Audio\spawn-02.xnb</Link>
+    </Content>
+    <Content Include="..\NeonShooter\Content\iOS\Audio\spawn-03.xnb">
+      <Link>Content\Audio\spawn-03.xnb</Link>
+    </Content>
+    <Content Include="..\NeonShooter\Content\iOS\Audio\spawn-04.xnb">
+      <Link>Content\Audio\spawn-04.xnb</Link>
+    </Content>
+    <Content Include="..\NeonShooter\Content\iOS\Audio\spawn-05.xnb">
+      <Link>Content\Audio\spawn-05.xnb</Link>
+    </Content>
+    <Content Include="..\NeonShooter\Content\iOS\Audio\spawn-06.xnb">
+      <Link>Content\Audio\spawn-06.xnb</Link>
+    </Content>
+    <Content Include="..\NeonShooter\Content\iOS\Audio\spawn-07.xnb">
+      <Link>Content\Audio\spawn-07.xnb</Link>
+    </Content>
+    <Content Include="..\NeonShooter\Content\iOS\Audio\spawn-08.xnb">
+      <Link>Content\Audio\spawn-08.xnb</Link>
+    </Content>
+  </ItemGroup>
+  <ItemGroup>
+    <NativeReference Include="$(MonoGameInstallDirectory)\MonoGame\v3.0\Assemblies\DesktopGL\libopenal.1.dylib">
+      <Link>libopenal.1.dylib</Link>
+      <Kind>Static</Kind>
+    </NativeReference>
+    <NativeReference Include="$(MonoGameInstallDirectory)\MonoGame\v3.0\Assemblies\DesktopGL\libSDL2-2.0.0.dylib">
+      <Link>libSDL2-2.0.0.dylib</Link>
+      <Kind>Static</Kind>
+    </NativeReference>
+  </ItemGroup>
+  <ItemGroup>
+    <Folder Include="Content\" />
+  </ItemGroup>
+  <ItemGroup>
+    <BundleResource Include="monogameicon.png" />
+  </ItemGroup>
+  <Import Project="$(MSBuildExtensionsPath)\Xamarin\Mac\Xamarin.Mac.CSharp.targets" />
+  <Import Project="$(MSBuildExtensionsPath)\MonoGame\v3.0\MonoGame.Content.Builder.targets" />
+</Project>

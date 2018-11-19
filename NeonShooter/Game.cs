@@ -16,6 +16,7 @@ using Microsoft.Xna.Framework.Input.Touch;
 using BloomPostprocess;
 
 
+
 namespace NeonShooter
 {
     /// <summary>
@@ -39,7 +40,7 @@ namespace NeonShooter
 		bool useBloom = false;
 
 
-        
+
         public NeonShooterGame()
         {
 			Instance = this;

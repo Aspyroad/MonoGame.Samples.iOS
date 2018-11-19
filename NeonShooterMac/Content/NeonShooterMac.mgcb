@@ -1,0 +1,602 @@
+
+#----------------------------- Global Properties ----------------------------#
+
+/outputDir:bin
+/intermediateDir:obj
+/platform:MacOSX
+/config:
+/profile:Reach
+/compress:False
+
+#-------------------------------- References --------------------------------#
+
+
+#---------------------------------- Content ---------------------------------#
+
+#begin ../../NeonShooter/Content/Art/Black Hole.png
+/importer:TextureImporter
+/processor:TextureProcessor
+/processorParam:ColorKeyColor=255,0,255,255
+/processorParam:ColorKeyEnabled=True
+/processorParam:GenerateMipmaps=False
+/processorParam:PremultiplyAlpha=True
+/processorParam:ResizeToPowerOfTwo=False
+/processorParam:MakeSquare=False
+/processorParam:TextureFormat=Color
+/build:../../NeonShooter/Content/Art/Black Hole.png;Art/Black Hole.png
+
+#begin ../../NeonShooter/Content/Art/Bullet.png
+/importer:TextureImporter
+/processor:TextureProcessor
+/processorParam:ColorKeyColor=255,0,255,255
+/processorParam:ColorKeyEnabled=True
+/processorParam:GenerateMipmaps=False
+/processorParam:PremultiplyAlpha=True
+/processorParam:ResizeToPowerOfTwo=False
+/processorParam:MakeSquare=False
+/processorParam:TextureFormat=Color
+/build:../../NeonShooter/Content/Art/Bullet.png;Art/Bullet.png
+
+#begin ../../NeonShooter/Content/Art/Glow.png
+/importer:TextureImporter
+/processor:TextureProcessor
+/processorParam:ColorKeyColor=255,0,255,255
+/processorParam:ColorKeyEnabled=True
+/processorParam:GenerateMipmaps=False
+/processorParam:PremultiplyAlpha=True
+/processorParam:ResizeToPowerOfTwo=False
+/processorParam:MakeSquare=False
+/processorParam:TextureFormat=Color
+/build:../../NeonShooter/Content/Art/Glow.png;Art/Glow.png
+
+#begin ../../NeonShooter/Content/Art/Laser.png
+/importer:TextureImporter
+/processor:TextureProcessor
+/processorParam:ColorKeyColor=255,0,255,255
+/processorParam:ColorKeyEnabled=True
+/processorParam:GenerateMipmaps=False
+/processorParam:PremultiplyAlpha=True
+/processorParam:ResizeToPowerOfTwo=False
+/processorParam:MakeSquare=False
+/processorParam:TextureFormat=Color
+/build:../../NeonShooter/Content/Art/Laser.png;Art/Laser.png
+
+#begin ../../NeonShooter/Content/Art/Player.png
+/importer:TextureImporter
+/processor:TextureProcessor
+/processorParam:ColorKeyColor=255,0,255,255
+/processorParam:ColorKeyEnabled=True
+/processorParam:GenerateMipmaps=False
+/processorParam:PremultiplyAlpha=True
+/processorParam:ResizeToPowerOfTwo=False
+/processorParam:MakeSquare=False
+/processorParam:TextureFormat=Color
+/build:../../NeonShooter/Content/Art/Player.png;Art/Player.png
+
+#begin ../../NeonShooter/Content/Art/Pointer.png
+/importer:TextureImporter
+/processor:TextureProcessor
+/processorParam:ColorKeyColor=255,0,255,255
+/processorParam:ColorKeyEnabled=True
+/processorParam:GenerateMipmaps=False
+/processorParam:PremultiplyAlpha=True
+/processorParam:ResizeToPowerOfTwo=False
+/processorParam:MakeSquare=False
+/processorParam:TextureFormat=Color
+/build:../../NeonShooter/Content/Art/Pointer.png;Art/Pointer.png
+
+#begin ../../NeonShooter/Content/Art/Seeker.png
+/importer:TextureImporter
+/processor:TextureProcessor
+/processorParam:ColorKeyColor=255,0,255,255
+/processorParam:ColorKeyEnabled=True
+/processorParam:GenerateMipmaps=False
+/processorParam:PremultiplyAlpha=True
+/processorParam:ResizeToPowerOfTwo=False
+/processorParam:MakeSquare=False
+/processorParam:TextureFormat=Color
+/build:../../NeonShooter/Content/Art/Seeker.png;Art/Seeker.png
+
+#begin ../../NeonShooter/Content/Art/Wanderer.png
+/importer:TextureImporter
+/processor:TextureProcessor
+/processorParam:ColorKeyColor=255,0,255,255
+/processorParam:ColorKeyEnabled=True
+/processorParam:GenerateMipmaps=False
+/processorParam:PremultiplyAlpha=True
+/processorParam:ResizeToPowerOfTwo=False
+/processorParam:MakeSquare=False
+/processorParam:TextureFormat=Color
+/build:../../NeonShooter/Content/Art/Wanderer.png;Art/Wanderer.png
+
+#begin ../../NeonShooter/Content/Audio/explosion-01.wav
+/importer:WavImporter
+/processor:SoundEffectProcessor
+/processorParam:Quality=Best
+/build:../../NeonShooter/Content/Audio/explosion-01.wav;Audio/explosion-01.wav
+
+#begin ../../NeonShooter/Content/Audio/explosion-02.wav
+/importer:WavImporter
+/processor:SoundEffectProcessor
+/processorParam:Quality=Best
+/build:../../NeonShooter/Content/Audio/explosion-02.wav;Audio/explosion-02.wav
+
+#begin ../../NeonShooter/Content/Audio/explosion-03.wav
+/importer:WavImporter
+/processor:SoundEffectProcessor
+/processorParam:Quality=Best
+/build:../../NeonShooter/Content/Audio/explosion-03.wav;Audio/explosion-03.wav
+
+#begin ../../NeonShooter/Content/Audio/explosion-04.wav
+/importer:WavImporter
+/processor:SoundEffectProcessor
+/processorParam:Quality=Best
+/build:../../NeonShooter/Content/Audio/explosion-04.wav;Audio/explosion-04.wav
+
+#begin ../../NeonShooter/Content/Audio/explosion-05.wav
+/importer:WavImporter
+/processor:SoundEffectProcessor
+/processorParam:Quality=Best
+/build:../../NeonShooter/Content/Audio/explosion-05.wav;Audio/explosion-05.wav
+
+#begin ../../NeonShooter/Content/Audio/explosion-06.wav
+/importer:WavImporter
+/processor:SoundEffectProcessor
+/processorParam:Quality=Best
+/build:../../NeonShooter/Content/Audio/explosion-06.wav;Audio/explosion-06.wav
+
+#begin ../../NeonShooter/Content/Audio/explosion-07.wav
+/importer:WavImporter
+/processor:SoundEffectProcessor
+/processorParam:Quality=Best
+/build:../../NeonShooter/Content/Audio/explosion-07.wav;Audio/explosion-07.wav
+
+#begin ../../NeonShooter/Content/Audio/explosion-08.wav
+/importer:WavImporter
+/processor:SoundEffectProcessor
+/processorParam:Quality=Best
+/build:../../NeonShooter/Content/Audio/explosion-08.wav;Audio/explosion-08.wav
+
+#begin ../../NeonShooter/Content/Audio/Music.mp3
+/importer:Mp3Importer
+/processor:SongProcessor
+/processorParam:Quality=Best
+/build:../../NeonShooter/Content/Audio/Music.mp3;Audio/Music.mp3
+
+#begin ../../NeonShooter/Content/Audio/shoot-01.wav
+/importer:WavImporter
+/processor:SoundEffectProcessor
+/processorParam:Quality=Best
+/build:../../NeonShooter/Content/Audio/shoot-01.wav;Audio/shoot-01.wav
+
+#begin ../../NeonShooter/Content/Audio/shoot-02.wav
+/importer:WavImporter
+/processor:SoundEffectProcessor
+/processorParam:Quality=Best
+/build:../../NeonShooter/Content/Audio/shoot-02.wav;Audio/shoot-02.wav
+
+#begin ../../NeonShooter/Content/Audio/shoot-03.wav
+/importer:WavImporter
+/processor:SoundEffectProcessor
+/processorParam:Quality=Best
+/build:../../NeonShooter/Content/Audio/shoot-03.wav;Audio/shoot-03.wav
+
+#begin ../../NeonShooter/Content/Audio/shoot-04.wav
+/importer:WavImporter
+/processor:SoundEffectProcessor
+/processorParam:Quality=Best
+/build:../../NeonShooter/Content/Audio/shoot-04.wav;Audio/shoot-04.wav
+
+#begin ../../NeonShooter/Content/Audio/spawn-01.wav
+/importer:WavImporter
+/processor:SoundEffectProcessor
+/processorParam:Quality=Best
+/build:../../NeonShooter/Content/Audio/spawn-01.wav;Audio/spawn-01.wav
+
+#begin ../../NeonShooter/Content/Audio/spawn-02.wav
+/importer:WavImporter
+/processor:SoundEffectProcessor
+/processorParam:Quality=Best
+/build:../../NeonShooter/Content/Audio/spawn-02.wav;Audio/spawn-02.wav
+
+#begin ../../NeonShooter/Content/Audio/spawn-03.wav
+/importer:WavImporter
+/processor:SoundEffectProcessor
+/processorParam:Quality=Best
+/build:../../NeonShooter/Content/Audio/spawn-03.wav;Audio/spawn-03.wav
+
+#begin ../../NeonShooter/Content/Audio/spawn-04.wav
+/importer:WavImporter
+/processor:SoundEffectProcessor
+/processorParam:Quality=Best
+/build:../../NeonShooter/Content/Audio/spawn-04.wav;Audio/spawn-04.wav
+
+#begin ../../NeonShooter/Content/Audio/spawn-05.wav
+/importer:WavImporter
+/processor:SoundEffectProcessor
+/processorParam:Quality=Best
+/build:../../NeonShooter/Content/Audio/spawn-05.wav;Audio/spawn-05.wav
+
+#begin ../../NeonShooter/Content/Audio/spawn-06.wav
+/importer:WavImporter
+/processor:SoundEffectProcessor
+/processorParam:Quality=Best
+/build:../../NeonShooter/Content/Audio/spawn-06.wav;Audio/spawn-06.wav
+
+#begin ../../NeonShooter/Content/Audio/spawn-07.wav
+/importer:WavImporter
+/processor:SoundEffectProcessor
+/processorParam:Quality=Best
+/build:../../NeonShooter/Content/Audio/spawn-07.wav;Audio/spawn-07.wav
+
+#begin ../../NeonShooter/Content/Audio/spawn-08.wav
+/importer:WavImporter
+/processor:SoundEffectProcessor
+/processorParam:Quality=Best
+/build:../../NeonShooter/Content/Audio/spawn-08.wav;Audio/spawn-08.wav
+
+#begin ../../NeonShooter/Content/Font.spritefont
+/importer:FontDescriptionImporter
+/processor:FontDescriptionProcessor
+/processorParam:PremultiplyAlpha=True
+/processorParam:TextureFormat=Compressed
+/build:../../NeonShooter/Content/Font.spritefont;Font.spritefont
+
+#begin ../../NeonShooter/Content/iOS/Art/Black Hole.xnb
+/importer:
+/processor:
+/build:../../NeonShooter/Content/iOS/Art/Black Hole.xnb;iOS/Art/Black Hole.xnb
+
+#begin ../../NeonShooter/Content/iOS/Art/Bullet.xnb
+/importer:
+/processor:
+/build:../../NeonShooter/Content/iOS/Art/Bullet.xnb;iOS/Art/Bullet.xnb
+
+#begin ../../NeonShooter/Content/iOS/Art/Glow.xnb
+/importer:
+/processor:
+/build:../../NeonShooter/Content/iOS/Art/Glow.xnb;iOS/Art/Glow.xnb
+
+#begin ../../NeonShooter/Content/iOS/Art/Laser.xnb
+/importer:
+/processor:
+/build:../../NeonShooter/Content/iOS/Art/Laser.xnb;iOS/Art/Laser.xnb
+
+#begin ../../NeonShooter/Content/iOS/Art/Player.xnb
+/importer:
+/processor:
+/build:../../NeonShooter/Content/iOS/Art/Player.xnb;iOS/Art/Player.xnb
+
+#begin ../../NeonShooter/Content/iOS/Art/Pointer.xnb
+/importer:
+/processor:
+/build:../../NeonShooter/Content/iOS/Art/Pointer.xnb;iOS/Art/Pointer.xnb
+
+#begin ../../NeonShooter/Content/iOS/Art/Seeker.xnb
+/importer:
+/processor:
+/build:../../NeonShooter/Content/iOS/Art/Seeker.xnb;iOS/Art/Seeker.xnb
+
+#begin ../../NeonShooter/Content/iOS/Art/Wanderer.xnb
+/importer:
+/processor:
+/build:../../NeonShooter/Content/iOS/Art/Wanderer.xnb;iOS/Art/Wanderer.xnb
+
+#begin ../../NeonShooter/Content/iOS/Audio/explosion-01.xnb
+/importer:
+/processor:
+/build:../../NeonShooter/Content/iOS/Audio/explosion-01.xnb;iOS/Audio/explosion-01.xnb
+
+#begin ../../NeonShooter/Content/iOS/Audio/explosion-02.xnb
+/importer:
+/processor:
+/build:../../NeonShooter/Content/iOS/Audio/explosion-02.xnb;iOS/Audio/explosion-02.xnb
+
+#begin ../../NeonShooter/Content/iOS/Audio/explosion-03.xnb
+/importer:
+/processor:
+/build:../../NeonShooter/Content/iOS/Audio/explosion-03.xnb;iOS/Audio/explosion-03.xnb
+
+#begin ../../NeonShooter/Content/iOS/Audio/explosion-04.xnb
+/importer:
+/processor:
+/build:../../NeonShooter/Content/iOS/Audio/explosion-04.xnb;iOS/Audio/explosion-04.xnb
+
+#begin ../../NeonShooter/Content/iOS/Audio/explosion-05.xnb
+/importer:
+/processor:
+/build:../../NeonShooter/Content/iOS/Audio/explosion-05.xnb;iOS/Audio/explosion-05.xnb
+
+#begin ../../NeonShooter/Content/iOS/Audio/explosion-06.xnb
+/importer:
+/processor:
+/build:../../NeonShooter/Content/iOS/Audio/explosion-06.xnb;iOS/Audio/explosion-06.xnb
+
+#begin ../../NeonShooter/Content/iOS/Audio/explosion-07.xnb
+/importer:
+/processor:
+/build:../../NeonShooter/Content/iOS/Audio/explosion-07.xnb;iOS/Audio/explosion-07.xnb
+
+#begin ../../NeonShooter/Content/iOS/Audio/explosion-08.xnb
+/importer:
+/processor:
+/build:../../NeonShooter/Content/iOS/Audio/explosion-08.xnb;iOS/Audio/explosion-08.xnb
+
+#begin ../../NeonShooter/Content/iOS/Audio/Music.m4a
+/importer:
+/processor:
+/build:../../NeonShooter/Content/iOS/Audio/Music.m4a;iOS/Audio/Music.m4a
+
+#begin ../../NeonShooter/Content/iOS/Audio/Music.xnb
+/importer:
+/processor:
+/build:../../NeonShooter/Content/iOS/Audio/Music.xnb;iOS/Audio/Music.xnb
+
+#begin ../../NeonShooter/Content/iOS/Audio/shoot-01.xnb
+/importer:
+/processor:
+/build:../../NeonShooter/Content/iOS/Audio/shoot-01.xnb;iOS/Audio/shoot-01.xnb
+
+#begin ../../NeonShooter/Content/iOS/Audio/shoot-02.xnb
+/importer:
+/processor:
+/build:../../NeonShooter/Content/iOS/Audio/shoot-02.xnb;iOS/Audio/shoot-02.xnb
+
+#begin ../../NeonShooter/Content/iOS/Audio/shoot-03.xnb
+/importer:
+/processor:
+/build:../../NeonShooter/Content/iOS/Audio/shoot-03.xnb;iOS/Audio/shoot-03.xnb
+
+#begin ../../NeonShooter/Content/iOS/Audio/shoot-04.xnb
+/importer:
+/processor:
+/build:../../NeonShooter/Content/iOS/Audio/shoot-04.xnb;iOS/Audio/shoot-04.xnb
+
+#begin ../../NeonShooter/Content/iOS/Audio/spawn-01.xnb
+/importer:
+/processor:
+/build:../../NeonShooter/Content/iOS/Audio/spawn-01.xnb;iOS/Audio/spawn-01.xnb
+
+#begin ../../NeonShooter/Content/iOS/Audio/spawn-02.xnb
+/importer:
+/processor:
+/build:../../NeonShooter/Content/iOS/Audio/spawn-02.xnb;iOS/Audio/spawn-02.xnb
+
+#begin ../../NeonShooter/Content/iOS/Audio/spawn-03.xnb
+/importer:
+/processor:
+/build:../../NeonShooter/Content/iOS/Audio/spawn-03.xnb;iOS/Audio/spawn-03.xnb
+
+#begin ../../NeonShooter/Content/iOS/Audio/spawn-04.xnb
+/importer:
+/processor:
+/build:../../NeonShooter/Content/iOS/Audio/spawn-04.xnb;iOS/Audio/spawn-04.xnb
+
+#begin ../../NeonShooter/Content/iOS/Audio/spawn-05.xnb
+/importer:
+/processor:
+/build:../../NeonShooter/Content/iOS/Audio/spawn-05.xnb;iOS/Audio/spawn-05.xnb
+
+#begin ../../NeonShooter/Content/iOS/Audio/spawn-06.xnb
+/importer:
+/processor:
+/build:../../NeonShooter/Content/iOS/Audio/spawn-06.xnb;iOS/Audio/spawn-06.xnb
+
+#begin ../../NeonShooter/Content/iOS/Audio/spawn-07.xnb
+/importer:
+/processor:
+/build:../../NeonShooter/Content/iOS/Audio/spawn-07.xnb;iOS/Audio/spawn-07.xnb
+
+#begin ../../NeonShooter/Content/iOS/Audio/spawn-08.xnb
+/importer:
+/processor:
+/build:../../NeonShooter/Content/iOS/Audio/spawn-08.xnb;iOS/Audio/spawn-08.xnb
+
+#begin ../../NeonShooter/Content/iOS/Font.xnb
+/importer:
+/processor:
+/build:../../NeonShooter/Content/iOS/Font.xnb;iOS/Font.xnb
+
+#begin ../../NeonShooter/Content/iOS/Shaders/BloomCombine.xnb
+/importer:
+/processor:
+/build:../../NeonShooter/Content/iOS/Shaders/BloomCombine.xnb;iOS/Shaders/BloomCombine.xnb
+
+#begin ../../NeonShooter/Content/iOS/Shaders/BloomExtract.xnb
+/importer:
+/processor:
+/build:../../NeonShooter/Content/iOS/Shaders/BloomExtract.xnb;iOS/Shaders/BloomExtract.xnb
+
+#begin ../../NeonShooter/Content/iOS/Shaders/GaussianBlur.xnb
+/importer:
+/processor:
+/build:../../NeonShooter/Content/iOS/Shaders/GaussianBlur.xnb;iOS/Shaders/GaussianBlur.xnb
+
+#begin ../../NeonShooter/Content/obj/.mgcontent
+/importer:
+/processor:
+/build:../../NeonShooter/Content/obj/.mgcontent;obj/.mgcontent
+
+#begin ../../NeonShooter/Content/obj/Art/Black Hole.mgcontent
+/importer:
+/processor:
+/build:../../NeonShooter/Content/obj/Art/Black Hole.mgcontent;obj/Art/Black Hole.mgcontent
+
+#begin ../../NeonShooter/Content/obj/Art/Bullet.mgcontent
+/importer:
+/processor:
+/build:../../NeonShooter/Content/obj/Art/Bullet.mgcontent;obj/Art/Bullet.mgcontent
+
+#begin ../../NeonShooter/Content/obj/Art/Glow.mgcontent
+/importer:
+/processor:
+/build:../../NeonShooter/Content/obj/Art/Glow.mgcontent;obj/Art/Glow.mgcontent
+
+#begin ../../NeonShooter/Content/obj/Art/Laser.mgcontent
+/importer:
+/processor:
+/build:../../NeonShooter/Content/obj/Art/Laser.mgcontent;obj/Art/Laser.mgcontent
+
+#begin ../../NeonShooter/Content/obj/Art/Player.mgcontent
+/importer:
+/processor:
+/build:../../NeonShooter/Content/obj/Art/Player.mgcontent;obj/Art/Player.mgcontent
+
+#begin ../../NeonShooter/Content/obj/Art/Pointer.mgcontent
+/importer:
+/processor:
+/build:../../NeonShooter/Content/obj/Art/Pointer.mgcontent;obj/Art/Pointer.mgcontent
+
+#begin ../../NeonShooter/Content/obj/Art/Seeker.mgcontent
+/importer:
+/processor:
+/build:../../NeonShooter/Content/obj/Art/Seeker.mgcontent;obj/Art/Seeker.mgcontent
+
+#begin ../../NeonShooter/Content/obj/Art/Wanderer.mgcontent
+/importer:
+/processor:
+/build:../../NeonShooter/Content/obj/Art/Wanderer.mgcontent;obj/Art/Wanderer.mgcontent
+
+#begin ../../NeonShooter/Content/obj/Audio/explosion-01.mgcontent
+/importer:
+/processor:
+/build:../../NeonShooter/Content/obj/Audio/explosion-01.mgcontent;obj/Audio/explosion-01.mgcontent
+
+#begin ../../NeonShooter/Content/obj/Audio/explosion-02.mgcontent
+/importer:
+/processor:
+/build:../../NeonShooter/Content/obj/Audio/explosion-02.mgcontent;obj/Audio/explosion-02.mgcontent
+
+#begin ../../NeonShooter/Content/obj/Audio/explosion-03.mgcontent
+/importer:
+/processor:
+/build:../../NeonShooter/Content/obj/Audio/explosion-03.mgcontent;obj/Audio/explosion-03.mgcontent
+
+#begin ../../NeonShooter/Content/obj/Audio/explosion-04.mgcontent
+/importer:
+/processor:
+/build:../../NeonShooter/Content/obj/Audio/explosion-04.mgcontent;obj/Audio/explosion-04.mgcontent
+
+#begin ../../NeonShooter/Content/obj/Audio/explosion-05.mgcontent
+/importer:
+/processor:
+/build:../../NeonShooter/Content/obj/Audio/explosion-05.mgcontent;obj/Audio/explosion-05.mgcontent
+
+#begin ../../NeonShooter/Content/obj/Audio/explosion-06.mgcontent
+/importer:
+/processor:
+/build:../../NeonShooter/Content/obj/Audio/explosion-06.mgcontent;obj/Audio/explosion-06.mgcontent
+
+#begin ../../NeonShooter/Content/obj/Audio/explosion-07.mgcontent
+/importer:
+/processor:
+/build:../../NeonShooter/Content/obj/Audio/explosion-07.mgcontent;obj/Audio/explosion-07.mgcontent
+
+#begin ../../NeonShooter/Content/obj/Audio/explosion-08.mgcontent
+/importer:
+/processor:
+/build:../../NeonShooter/Content/obj/Audio/explosion-08.mgcontent;obj/Audio/explosion-08.mgcontent
+
+#begin ../../NeonShooter/Content/obj/Audio/Music.mgcontent
+/importer:
+/processor:
+/build:../../NeonShooter/Content/obj/Audio/Music.mgcontent;obj/Audio/Music.mgcontent
+
+#begin ../../NeonShooter/Content/obj/Audio/shoot-01.mgcontent
+/importer:
+/processor:
+/build:../../NeonShooter/Content/obj/Audio/shoot-01.mgcontent;obj/Audio/shoot-01.mgcontent
+
+#begin ../../NeonShooter/Content/obj/Audio/shoot-02.mgcontent
+/importer:
+/processor:
+/build:../../NeonShooter/Content/obj/Audio/shoot-02.mgcontent;obj/Audio/shoot-02.mgcontent
+
+#begin ../../NeonShooter/Content/obj/Audio/shoot-03.mgcontent
+/importer:
+/processor:
+/build:../../NeonShooter/Content/obj/Audio/shoot-03.mgcontent;obj/Audio/shoot-03.mgcontent
+
+#begin ../../NeonShooter/Content/obj/Audio/shoot-04.mgcontent
+/importer:
+/processor:
+/build:../../NeonShooter/Content/obj/Audio/shoot-04.mgcontent;obj/Audio/shoot-04.mgcontent
+
+#begin ../../NeonShooter/Content/obj/Audio/spawn-01.mgcontent
+/importer:
+/processor:
+/build:../../NeonShooter/Content/obj/Audio/spawn-01.mgcontent;obj/Audio/spawn-01.mgcontent
+
+#begin ../../NeonShooter/Content/obj/Audio/spawn-02.mgcontent
+/importer:
+/processor:
+/build:../../NeonShooter/Content/obj/Audio/spawn-02.mgcontent;obj/Audio/spawn-02.mgcontent
+
+#begin ../../NeonShooter/Content/obj/Audio/spawn-03.mgcontent
+/importer:
+/processor:
+/build:../../NeonShooter/Content/obj/Audio/spawn-03.mgcontent;obj/Audio/spawn-03.mgcontent
+
+#begin ../../NeonShooter/Content/obj/Audio/spawn-04.mgcontent
+/importer:
+/processor:
+/build:../../NeonShooter/Content/obj/Audio/spawn-04.mgcontent;obj/Audio/spawn-04.mgcontent
+
+#begin ../../NeonShooter/Content/obj/Audio/spawn-05.mgcontent
+/importer:
+/processor:
+/build:../../NeonShooter/Content/obj/Audio/spawn-05.mgcontent;obj/Audio/spawn-05.mgcontent
+
+#begin ../../NeonShooter/Content/obj/Audio/spawn-06.mgcontent
+/importer:
+/processor:
+/build:../../NeonShooter/Content/obj/Audio/spawn-06.mgcontent;obj/Audio/spawn-06.mgcontent
+
+#begin ../../NeonShooter/Content/obj/Audio/spawn-07.mgcontent
+/importer:
+/processor:
+/build:../../NeonShooter/Content/obj/Audio/spawn-07.mgcontent;obj/Audio/spawn-07.mgcontent
+
+#begin ../../NeonShooter/Content/obj/Audio/spawn-08.mgcontent
+/importer:
+/processor:
+/build:../../NeonShooter/Content/obj/Audio/spawn-08.mgcontent;obj/Audio/spawn-08.mgcontent
+
+#begin ../../NeonShooter/Content/obj/Font.mgcontent
+/importer:
+/processor:
+/build:../../NeonShooter/Content/obj/Font.mgcontent;obj/Font.mgcontent
+
+#begin ../../NeonShooter/Content/obj/Shaders/BloomCombine.mgcontent
+/importer:
+/processor:
+/build:../../NeonShooter/Content/obj/Shaders/BloomCombine.mgcontent;obj/Shaders/BloomCombine.mgcontent
+
+#begin ../../NeonShooter/Content/obj/Shaders/BloomExtract.mgcontent
+/importer:
+/processor:
+/build:../../NeonShooter/Content/obj/Shaders/BloomExtract.mgcontent;obj/Shaders/BloomExtract.mgcontent
+
+#begin ../../NeonShooter/Content/obj/Shaders/GaussianBlur.mgcontent
+/importer:
+/processor:
+/build:../../NeonShooter/Content/obj/Shaders/GaussianBlur.mgcontent;obj/Shaders/GaussianBlur.mgcontent
+
+#begin ../../NeonShooter/Content/Shaders/BloomCombine.fx
+/importer:EffectImporter
+/processor:EffectProcessor
+/processorParam:DebugMode=Auto
+/build:../../NeonShooter/Content/Shaders/BloomCombine.fx;Shaders/BloomCombine.fx
+
+#begin ../../NeonShooter/Content/Shaders/BloomExtract.fx
+/importer:EffectImporter
+/processor:EffectProcessor
+/processorParam:DebugMode=Auto
+/build:../../NeonShooter/Content/Shaders/BloomExtract.fx;Shaders/BloomExtract.fx
+
+#begin ../../NeonShooter/Content/Shaders/GaussianBlur.fx
+/importer:EffectImporter
+/processor:EffectProcessor
+/processorParam:DebugMode=Auto
+/build:../../NeonShooter/Content/Shaders/GaussianBlur.fx;Shaders/GaussianBlur.fx
+

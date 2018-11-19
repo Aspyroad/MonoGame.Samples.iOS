@@ -1,0 +1,46 @@
+<Project Sdk="Microsoft.NET.Sdk">
+
+  <PropertyGroup>
+    <OutputType>Exe</OutputType>
+    <TargetFramework>netcoreapp2.0</TargetFramework>
+  </PropertyGroup>
+
+  <ItemGroup>
+    <PackageReference Include="MonoGame.Framework.DesktopGL" Version="3.7.0.1708" />
+    <PackageReference Include="MonoGame.Framework.DesktopGL.Core" Version="3.7.0.7" />
+    <PackageReference Include="MonoGame.Content.Builder" Version="3.7.0.9" />
+  </ItemGroup>
+  <ItemGroup>
+    <Folder Include="Content\" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Remove="Properties\AssemblyInfo.cs" />
+    <Compile Remove="Program.cs" />
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="..\RenderToTextureContent\bin\DesktopGL\Models\eyeball.xnb">
+      <Link>Content\Models\eyeball.xnb</Link>
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="..\RenderToTextureContent\bin\DesktopGL\Models\Textures\Eye_D.xnb">
+      <Link>Content\Models\Textures\Eye_D.xnb</Link>
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="..\RenderToTextureContent\bin\DesktopGL\Models\Textures\Eye_D_0.xnb">
+      <Link>Content\Models\Textures\Eye_D_0.xnb</Link>
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="..\RenderToTextureContent\bin\DesktopGL\Models\Textures\Eye_N.xnb">
+      <Link>Content\Models\Textures\Eye_N.xnb</Link>
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="..\RenderToTextureContent\bin\DesktopGL\Models\Textures\REF 1.xnb">
+      <Link>Content\Models\Textures\REF 1.xnb</Link>
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="..\RenderToTextureContent\bin\DesktopGL\Models\Textures\REF 1_0.xnb">
+      <Link>Content\Models\Textures\REF 1_0.xnb</Link>
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+  </ItemGroup>
+</Project>
