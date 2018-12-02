@@ -13,10 +13,7 @@
 
 #---------------------------------- Content ---------------------------------#
 
-#begin Models/eyeball.fbx
-/copy:Models/eyeball.fbx
-
-#begin Models/Helicopter.fbx
+#begin Horse_full.OBJ
 /importer:FbxImporter
 /processor:ModelProcessor
 /processorParam:ColorKeyColor=0,0,0,0
@@ -33,53 +30,5 @@
 /processorParam:Scale=1
 /processorParam:SwapWindingOrder=False
 /processorParam:TextureFormat=NoChange
-/build:Models/Helicopter.fbx
-
-#begin Models/HelicopterTexture.png
-/importer:TextureImporter
-/processor:TextureProcessor
-/processorParam:ColorKeyColor=255,0,255,255
-/processorParam:ColorKeyEnabled=True
-/processorParam:GenerateMipmaps=False
-/processorParam:PremultiplyAlpha=True
-/processorParam:ResizeToPowerOfTwo=False
-/processorParam:MakeSquare=False
-/processorParam:TextureFormat=Color
-/build:Models/HelicopterTexture.png
-
-#begin Models/Textures/Eye_D.jpg
-/importer:TextureImporter
-/processor:TextureProcessor
-/processorParam:ColorKeyColor=255,0,255,255
-/processorParam:ColorKeyEnabled=True
-/processorParam:GenerateMipmaps=False
-/processorParam:PremultiplyAlpha=True
-/processorParam:ResizeToPowerOfTwo=False
-/processorParam:MakeSquare=False
-/processorParam:TextureFormat=Color
-/build:Models/Textures/Eye_D.jpg
-
-#begin Models/Textures/Eye_N.jpg
-/importer:TextureImporter
-/processor:TextureProcessor
-/processorParam:ColorKeyColor=255,0,255,255
-/processorParam:ColorKeyEnabled=True
-/processorParam:GenerateMipmaps=False
-/processorParam:PremultiplyAlpha=True
-/processorParam:ResizeToPowerOfTwo=False
-/processorParam:MakeSquare=False
-/processorParam:TextureFormat=Color
-/build:Models/Textures/Eye_N.jpg
-
-#begin Models/Textures/REF 1.jpg
-/importer:TextureImporter
-/processor:TextureProcessor
-/processorParam:ColorKeyColor=255,0,255,255
-/processorParam:ColorKeyEnabled=True
-/processorParam:GenerateMipmaps=False
-/processorParam:PremultiplyAlpha=True
-/processorParam:ResizeToPowerOfTwo=False
-/processorParam:MakeSquare=False
-/processorParam:TextureFormat=Color
-/build:Models/Textures/REF 1.jpg
+/build:Horse_full.OBJ
 

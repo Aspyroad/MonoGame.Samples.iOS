@@ -138,59 +138,59 @@ namespace NeonShooter
 
 		public void ApplyDirectedForce(Vector2 force, Vector2 position, float radius)
 		{
-			ApplyDirectedForce(new Vector3(force, 0), new Vector3(position, 0), radius);
+			//ApplyDirectedForce(new Vector3(force, 0), new Vector3(position, 0), radius);
 		}
 
 		public void ApplyDirectedForce(Vector3 force, Vector3 position, float radius)
 		{
-			foreach (var mass in points)
-				if (Vector3.DistanceSquared(position, mass.Position) < radius * radius)
-					mass.ApplyForce(10 * force / (10 + Vector3.Distance(position, mass.Position)));
+			//foreach (var mass in points)
+				//if (Vector3.DistanceSquared(position, mass.Position) < radius * radius)
+					//mass.ApplyForce(10 * force / (10 + Vector3.Distance(position, mass.Position)));
 		}
 
 		public void ApplyImplosiveForce(float force, Vector2 position, float radius)
 		{
-			ApplyImplosiveForce(force, new Vector3(position, 0), radius);
+			//ApplyImplosiveForce(force, new Vector3(position, 0), radius);
 		}
 
 		public void ApplyImplosiveForce(float force, Vector3 position, float radius)
 		{
-			foreach (var mass in points)
-			{
-				float dist2 = Vector3.DistanceSquared(position, mass.Position);
-				if (dist2 < radius * radius)
-				{
-					mass.ApplyForce(10 * force * (position - mass.Position) / (100 + dist2));
-					mass.IncreaseDamping(0.6f);
-				}
-			}
+			//foreach (var mass in points)
+			//{
+			//	float dist2 = Vector3.DistanceSquared(position, mass.Position);
+			//	if (dist2 < radius * radius)
+			//	{
+			//		mass.ApplyForce(10 * force * (position - mass.Position) / (100 + dist2));
+			//		mass.IncreaseDamping(0.6f);
+			//	}
+			//}
 		}
 
 		public void ApplyExplosiveForce(float force, Vector2 position, float radius)
 		{
-			ApplyExplosiveForce(force, new Vector3(position, 0), radius);
+			//ApplyExplosiveForce(force, new Vector3(position, 0), radius);
 		}
 
 		public void ApplyExplosiveForce(float force, Vector3 position, float radius)
 		{
-			foreach (var mass in points)
-			{
-				float dist2 = Vector3.DistanceSquared(position, mass.Position);
-				if (dist2 < radius * radius)
-				{
-					mass.ApplyForce(100 * force * (mass.Position - position) / (10000 + dist2));
-					mass.IncreaseDamping(0.6f);
-				}
-			}
+			//foreach (var mass in points)
+			//{
+			//	float dist2 = Vector3.DistanceSquared(position, mass.Position);
+			//	if (dist2 < radius * radius)
+			//	{
+			//		mass.ApplyForce(100 * force * (mass.Position - position) / (10000 + dist2));
+			//		mass.IncreaseDamping(0.6f);
+			//	}
+			//}
 		}
 
 		public void Update()
 		{
-			foreach (var spring in springs)
-				spring.Update();
+			//foreach (var spring in springs)
+			//	spring.Update();
 
-			foreach (var mass in points)
-				mass.Update();
+			//foreach (var mass in points)
+				//mass.Update();
 		}
 
 		public void Draw(SpriteBatch spriteBatch)
@@ -199,7 +199,7 @@ namespace NeonShooter
 
 			int width = points.GetLength(0);
 			int height = points.GetLength(1);
-			Color color = new Color(30, 30, 139, 85);	// dark blue
+			Color color = new Color(255, 255, 255, 255);	// dark blue
 
 			for (int y = 1; y < height; y++)
 			{

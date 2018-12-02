@@ -23,10 +23,11 @@ namespace RenderToTexture
         SpriteBatch spriteBatch;
 
         Matrix world = Matrix.CreateTranslation(0, 0, 0);
-        Matrix view = Matrix.CreateLookAt(new Vector3(0, 10, 10), new Vector3(0, 0, 0), new Vector3(0, 1, 0));
-        Matrix projection = Matrix.CreatePerspectiveFieldOfView(MathHelper.ToRadians(45), 800f / 480f, 0.1f, 100f);
+        Matrix view = Matrix.CreateLookAt(new Vector3(0, 0, 0), new Vector3(0, 0, 0), new Vector3(0, 1, 0));
+        Matrix projection = Matrix.CreatePerspectiveFieldOfView(MathHelper.ToRadians(45), 1024f / 768f, 0.1f, 100f);
         float angle = 0;
         float distance = 10;
+        float topbottom = 0;
         Vector3 viewVector;
         float objectAngle = 0;
 
@@ -40,16 +41,27 @@ namespace RenderToTexture
         {
             graphics = new GraphicsDeviceManager(this);
             Content.RootDirectory = "Content";
+
+            graphics.PreferredBackBufferWidth = 1024;
+            graphics.PreferredBackBufferHeight = 768;
         }
 
         protected override void Initialize()
         {
             base.Initialize();
 
+            //renderTarget = new RenderTarget2D(
+                            //GraphicsDevice,
+                            //GraphicsDevice.PresentationParameters.BackBufferWidth,
+                            //GraphicsDevice.PresentationParameters.BackBufferHeight,
+                            //false,
+                            //GraphicsDevice.PresentationParameters.BackBufferFormat,
+                            //DepthFormat.Depth24);
+
             renderTarget = new RenderTarget2D(
                             GraphicsDevice,
-                            GraphicsDevice.PresentationParameters.BackBufferWidth,
-                            GraphicsDevice.PresentationParameters.BackBufferHeight,
+                            1024,
+                            768,
                             false,
                             GraphicsDevice.PresentationParameters.BackBufferFormat,
                             DepthFormat.Depth24);
@@ -60,7 +72,8 @@ namespace RenderToTexture
             spriteBatch = new SpriteBatch(GraphicsDevice);
 
             //model = Content.Load<Model>("Models/Helicopter");
-            model = Content.Load<Model>("Models/eyeball");
+
+            model = Content.Load<Model>("Horse_full");
         }
 
         protected override void UnloadContent()
@@ -74,11 +87,11 @@ namespace RenderToTexture
 
             KeyboardState keyboardState = Keyboard.GetState();
 
-            if (keyboardState.IsKeyDown(Keys.O))
+            if (keyboardState.IsKeyDown(Keys.C))
             {
                 currentMode = Mode.Object;
             }
-            if (keyboardState.IsKeyDown(Keys.C))
+            if (keyboardState.IsKeyDown(Keys.V))
             {
                 currentMode = Mode.Camera;
             }
@@ -87,30 +100,38 @@ namespace RenderToTexture
             {
                 if (keyboardState.IsKeyDown(Keys.Left))
                 {
-                    angle -= 0.01f;
+                    distance -= 0.09f;
                 }
                 else if (keyboardState.IsKeyDown(Keys.Right))
                 {
-                    angle += 0.01f;
+                    distance += 0.09f;
                 }
             }
             if (currentMode == Mode.Object)
             {
                 if (keyboardState.IsKeyDown(Keys.Left))
                 {
-                    objectAngle -= 0.01f;
+                    objectAngle -= 0.09f;
                 }
                 else if (keyboardState.IsKeyDown(Keys.Right))
                 {
-                    objectAngle += 0.01f;
+                    objectAngle += 0.09f;
                 }
 
                 world = Matrix.CreateRotationY(objectAngle);
             }
 
+            if (keyboardState.IsKeyDown(Keys.Up))
+            {
+                topbottom -= 0.06f;
+            }
+            else if (keyboardState.IsKeyDown(Keys.Down))
+            {
+                topbottom += 0.06f;
+            }
 
-            Vector3 cameraLocation = distance * new Vector3((float)Math.Sin(angle), .5f, (float)Math.Cos(angle));
-            Vector3 cameraTarget = new Vector3(0, 0, 0);
+            Vector3 cameraLocation = distance * new Vector3((float)Math.Sin(angle), topbottom, (float)Math.Cos(angle));
+            Vector3 cameraTarget = new Vector3(0, 1, 0);
             viewVector = Vector3.Transform(cameraTarget - cameraLocation, Matrix.CreateRotationY(0));
             viewVector.Normalize();
             view = Matrix.CreateLookAt(cameraLocation, cameraTarget, new Vector3(0, 1, 0));
@@ -142,13 +163,13 @@ namespace RenderToTexture
         {
             DrawSceneToTexture(renderTarget);
 
-            GraphicsDevice.Clear(Color.Black);
+            GraphicsDevice.Clear(Color.Pink);
 
             spriteBatch.Begin(SpriteSortMode.Immediate, BlendState.AlphaBlend,
                         SamplerState.LinearClamp, DepthStencilState.Default,
                         RasterizerState.CullNone);
 
-            spriteBatch.Draw(renderTarget, new Rectangle(0, 0, 400, 240), Color.White);
+            spriteBatch.Draw(renderTarget, new Rectangle(0, 0, 1024, 768), Color.White);
 
             spriteBatch.End();
 
@@ -164,7 +185,7 @@ namespace RenderToTexture
                 {
                     BasicEffect effect = (BasicEffect)part.Effect;
 
-                    effect.EnableDefaultLighting();
+                    effect.EmissiveColor = new Vector3(1,2,4);
                     effect.PreferPerPixelLighting = true;
                     effect.World = mesh.ParentBone.Transform * world;
                     effect.View = view;

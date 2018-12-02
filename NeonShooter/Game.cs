@@ -47,8 +47,8 @@ namespace NeonShooter
 			graphics = new GraphicsDeviceManager(this);
 			Content.RootDirectory = "Content";
 
-			graphics.PreferredBackBufferWidth = 800;
-			graphics.PreferredBackBufferHeight = 600;
+			graphics.PreferredBackBufferWidth = 1024;
+			graphics.PreferredBackBufferHeight = 768;
 
 			bloom = new BloomComponent(this);
 			Components.Add(bloom);
@@ -64,7 +64,7 @@ namespace NeonShooter
 
             ParticleManager = new ParticleManager<ParticleState>(1024 * 20, ParticleState.UpdateParticle);
 
-            const int maxGridPoints = 1600;
+            const int maxGridPoints = 10000;
             Vector2 gridSpacing = new Vector2((float)Math.Sqrt(Viewport.Width * Viewport.Height / maxGridPoints));
             Grid = new Grid(Viewport.Bounds, gridSpacing);
 
@@ -139,13 +139,13 @@ namespace NeonShooter
             if (!useBloom)
                 base.Draw(gameTime);
 
-            GraphicsDevice.Clear(Color.Black);
+            GraphicsDevice.Clear(Color.DarkOrange);
 
             spriteBatch.Begin(SpriteSortMode.Texture, BlendState.Additive);
             EntityManager.Draw(spriteBatch);
             spriteBatch.End();
 
-            spriteBatch.Begin(SpriteSortMode.Deferred, BlendState.Additive);
+            spriteBatch.Begin(SpriteSortMode.Deferred, BlendState.AlphaBlend);
             Grid.Draw(spriteBatch);
             ParticleManager.Draw(spriteBatch);
             spriteBatch.End();

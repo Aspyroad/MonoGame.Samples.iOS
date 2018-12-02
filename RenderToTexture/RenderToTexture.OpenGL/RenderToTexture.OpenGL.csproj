@@ -18,28 +18,12 @@
     <Compile Remove="Program.cs" />
   </ItemGroup>
   <ItemGroup>
-    <Content Include="..\RenderToTextureContent\bin\DesktopGL\Models\eyeball.xnb">
-      <Link>Content\Models\eyeball.xnb</Link>
+    <Content Include="..\RenderToTextureContent\bin\DesktopGL\Color_0.xnb">
+      <Link>Content\Color_0.xnb</Link>
       <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
     </Content>
-    <Content Include="..\RenderToTextureContent\bin\DesktopGL\Models\Textures\Eye_D.xnb">
-      <Link>Content\Models\Textures\Eye_D.xnb</Link>
-      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
-    </Content>
-    <Content Include="..\RenderToTextureContent\bin\DesktopGL\Models\Textures\Eye_D_0.xnb">
-      <Link>Content\Models\Textures\Eye_D_0.xnb</Link>
-      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
-    </Content>
-    <Content Include="..\RenderToTextureContent\bin\DesktopGL\Models\Textures\Eye_N.xnb">
-      <Link>Content\Models\Textures\Eye_N.xnb</Link>
-      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
-    </Content>
-    <Content Include="..\RenderToTextureContent\bin\DesktopGL\Models\Textures\REF 1.xnb">
-      <Link>Content\Models\Textures\REF 1.xnb</Link>
-      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
-    </Content>
-    <Content Include="..\RenderToTextureContent\bin\DesktopGL\Models\Textures\REF 1_0.xnb">
-      <Link>Content\Models\Textures\REF 1_0.xnb</Link>
+    <Content Include="..\RenderToTextureContent\bin\DesktopGL\Horse_full.xnb">
+      <Link>Content\Horse_full.xnb</Link>
       <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
     </Content>
   </ItemGroup>
